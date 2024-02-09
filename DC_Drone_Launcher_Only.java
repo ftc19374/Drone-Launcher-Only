@@ -17,11 +17,11 @@ public class DC_Drone_Launcher_Only extends LinearOpMode{
             waitForStart();
             while(opModeIsActive()) {
                 if (gamepad1.a) {
-                    Drone_Motor.setPower(0.6);
-                    sleep(1200);
+                    Drone_Motor.setPower(1);
+                    sleep(500);
 
                     Drone_Servo.setPower(1);
-                    sleep(550);
+                    sleep(300);
                     Drone_Motor.setPower(0);
                     Drone_Servo.setPower(0);
                 }
